@@ -1671,6 +1671,53 @@ In other cases, gmd:otherConstraints shall include a non-empty free text element
 		  <TranslationTemplate language="en" name="TR.emptyFreeText">XML document '{filename}', record '{id}': An empty PT_FreeText element has been found in the following path: {path}</TranslationTemplate>
           </translationTemplates>
          </LangTranslationTemplateCollection>
-	  
+
+	<!-- ETS Errors for Haleconnect generated test suites -->	
+    <LangTranslationTemplateCollection name="TR.missingMandatoryTypeError">
+			<translationTemplates>
+				<TranslationTemplate language="en" name="TR.missingMandatoryTypeError">The element with name '{localName}' and namespace '{namespace}' is mandatory in this Profile, but it wasn't found.</TranslationTemplate>
+			</translationTemplates>
+		</LangTranslationTemplateCollection>
+		<LangTranslationTemplateCollection name="TR.missingTypeContentError">
+			<translationTemplates>
+				<TranslationTemplate language="en" name="TR.missingTypeContentError">The property '{localName}' with namespace '{namespace}' was present in the file, but it didn't have any content.</TranslationTemplate>
+			</translationTemplates>
+		</LangTranslationTemplateCollection>
+		<LangTranslationTemplateCollection name="TR.invalidPropertyCardinalityError">
+			<translationTemplates>
+				<TranslationTemplate language="en" name="TR.invalidPropertyCardinalityError">The property '{localName}' with namespace '{namespace}' has an invalid cardinality of '{invalidCardinality}'.</TranslationTemplate>
+			</translationTemplates>
+		</LangTranslationTemplateCollection>
+		<LangTranslationTemplateCollection name="TR.moreThanOneOptionError">
+			<translationTemplates>
+				<TranslationTemplate language="en" name="TR.moreThanOneOptionError">The type choice '{localName}' with namespace '{namespace}' has more than one valid option specified.</TranslationTemplate>
+			</translationTemplates>
+		</LangTranslationTemplateCollection>
+		<LangTranslationTemplateCollection name="TR.noValidOptionError">
+			<translationTemplates>
+				<TranslationTemplate language="en" name="TR.noValidOptionError">The type choice '{localName}' with namespace '{namespace}' needs to specify one option, but none was found.</TranslationTemplate>
+			</translationTemplates>
+		</LangTranslationTemplateCollection>
+		<LangTranslationTemplateCollection name="TR.conditionNotExistingValue">
+			<translationTemplates>
+				<TranslationTemplate language="en" name="TR.conditionNotExistingValue">According to the condition, the property '{localName}' with namespace '{namespace}' was expected to be present, but it was not found.</TranslationTemplate>
+			</translationTemplates>
+		</LangTranslationTemplateCollection>
+		<LangTranslationTemplateCollection name="TR.conditionNotMatchingValue">
+			<translationTemplates>
+				<TranslationTemplate language="en" name="TR.conditionNotMatchingValue">According to the condition, the property '{localName}' with namespace '{namespace}' was expected to be have a value of '{expectedValue}', but that was not the case.</TranslationTemplate>
+			</translationTemplates>
+		</LangTranslationTemplateCollection>
+		<LangTranslationTemplateCollection name="TR.xorAllConditionsMatched">
+			<translationTemplates>
+				<TranslationTemplate language="en" name="TR.xorAllConditionsMatched">Evaluation of the XOR conditon failed: All conditions were matched</TranslationTemplate>
+			</translationTemplates>
+		</LangTranslationTemplateCollection>
+		<LangTranslationTemplateCollection name="TR.invalidPropertyValueError">
+			<translationTemplates>
+				<TranslationTemplate language="en" name="TR.invalidPropertyValueError">The property '{propName}' in the element with localName '{localName}' and namespace '{namespace}' contains the invalid value '{valueFound}'. Allowed values are ({allowedValues})</TranslationTemplate>
+			</translationTemplates>
+		</LangTranslationTemplateCollection>
+		
 	</translationTemplateCollections>
 </TranslationTemplateBundle>
